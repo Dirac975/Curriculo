@@ -1,0 +1,118 @@
+body {
+    background-color: black;     
+    color: aliceblue;
+    font-size: 16px;
+    overflow-y: scroll;
+        animation: aparecer-cartao 1.8s ease;
+}
+
+
+.topo-da-tela {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/*FRASE NO CANTO SUPERIRO ESQUERDO*/
+.titulo {
+    color:blueviolet;
+    font-size: 50px;
+}
+
+.titulo-conteudo-principal, 
+.titulo-experiencias, 
+.titulo-habilidades, 
+.titulo-projetos, 
+.titulo-contato {
+    color: blueviolet;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.botoes-de-navegacao {
+    background-color: black;
+    color:aliceblue;
+    border: 1px solid blueviolet;
+    font-size: 13px;
+    height: 30px;
+    padding: 6px;
+    margin: 6px;
+    width: 167px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 7px;
+    display: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.botoes-de-navegacao:hover {
+    background-color: blueviolet;
+    color: black;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+}
+
+.info-list {
+    list-style-type: circle;
+    margin-top: 15px;
+}
+
+.info-list li {
+    margin-bottom: 4px;
+}
+
+.conteudo-principal {
+    margin: 22px;
+    padding: 25px;
+}
+
+p {
+    max-width: 770px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/*Divisap em cartoes */
+.tela {
+    background-color: #111111;
+    border: 1px solid blueviolet;
+    border-radius: 7px;
+    padding: 20px;
+    margin: 0 auto 14px;
+    box-sizing: border-box;
+    box-shadow: 0 0 12px rgba(138, 43, 226, 0.25);
+    width: 100%;
+    max-width: 1000px;
+}
+
+@keyframes aparecer-cartao {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    
+    to {
+        opacity: 10;
+        transform: translateY(0)
+    }
+}
+
+/* Botao veja aqui */
+a {
+    text-decoration: none;
+    color: blueviolet;
+    user-select: none;
+}
+
+.foto-perfil {
+    width: 350px;
+    height: 400px;
+    border-radius: 7px;
+}
